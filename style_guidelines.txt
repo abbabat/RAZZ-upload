@@ -1,0 +1,26 @@
+Style Guidelines for Project Razz
+==============================
+
+These guidelines outline the preferred coding practices and conventions for styling the elements of Project Razz. 
+Following these guidelines will ensure consistency and maintainability across the codebase.
+We are a company named Razz, specializing in remote charging through equipped towers. The color red, our primary hue, embodies energy, vitality, and technological innovation at the core of our mission. This bold shade reflects our commitment to pushing the boundaries of technology to provide innovative charging solutions, positioning Razz as a pioneer in the industry.
+
+1. Global Styles: Set smooth scrolling for the entire HTML document and define the default font family such as Gabarito and relative positioning for the body.
+
+2. Header Styles: Customize the <h1> element by assigning it a red color, centering its content, and adding a top margin of 60 pixels to ensure optimal positioning of our header.
+
+3. Link Styles: Define the appearance of links (<a> elements) by specifying padding, border styling, text decoration, and color like red and white as font of text, with distinct styles for both normal and hover states to look realistic.
+
+4. Button Styles: Circular, dark gray button with white text (Gabarito font). Ensure consistency, use named colors, consider semantic <button> elements, adapt for various screens, define interactive states, and ensure accessibility for a polished look.
+
+5. Positioning Styles: The CSS for elements with the class .positionlinks applies a translation, moving them 10 pixels to the right and 20 pixels down, ensuring precise positioning.
+
+6. Navigation Panel Styles: The CSS for the side navigation panel (sidepanel) defines a cohesive design with a dark red background, rounded corners for a softened appearance, links (sidepanel a) styled in light gray for readability, and an opening button (openbtn) with a black background and white text, creating a clear visual contrast.
+
+7. Scroll Up Button Styles: For the scroll-up button (#scrollUp), its CSS ensures a fixed position at the bottom-right corner of the page. On hover, the button undergoes a transformation with a light gray background, providing a subtle visual cue for user interaction, enhancing the overall user experience.
+
+8. Image and Section Styles: The image with the ID #tech_tower_ID is styled with a dashed red border, specific width and height. The container divImgTechTower uses flexbox for centering, while heading and paragraph elements (h2 and p) within a section are center-aligned.
+
+9. Footer Styles: The CSS for the footer specifies that the text within it should be center-aligned, with a light gray color (#f1f1f1). The background color is set to a dark red shade (#D2042D), and a padding of 2 times the root font size is applied, providing spacing around the content for a good design.
+
+The CSS style guidelines for Project Razz emphasize consistency and professionalism, advocating for clear names, uniform indentation, and thoughtful comments. The color palette is limited for visual harmony, with a focus on responsive design and accessibility. Brand identity is integrated, and the use of semantic HTML is encouraged. Clarity and simplicity in the code are prioritized, with specific styles defined for buttons, positioning, navigation panels, scroll-up buttons, images, sections, and footers. These guidelines collectively ensure a polished visual design throughout the entire Project Razz project.

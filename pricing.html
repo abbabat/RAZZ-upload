@@ -1,0 +1,242 @@
+<html>
+    <script src="main.js"></script>
+
+    <style type="text/css">
+        .column {
+            float: left;
+            width: 33.33%;
+        }
+
+        p {
+            text-align: center;
+        }
+        h1 {
+            color : white; 
+            background-color: red;
+            text-align: center;
+            border-radius: 100px;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            padding: 10px;
+            margin-bottom: -48px;
+        }
+        h2 {
+            color : white; 
+            background-color: red;
+            text-align: center;
+            border-radius: 100px;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 50px;
+            padding: 10px;
+            transform: translate(0px,100px);
+        }
+        a {
+            padding: 10px;
+            border-radius: 100px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: 'Gabarito';
+            background-color: white;
+            color: #D2042D;
+            border-color: #D2042D;
+            text-align: center;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        a:hover {
+            background-color: #F88379;
+            color: white;
+        }
+        .section {
+            border: solid;
+            transform: translate(0px,100px);
+            margin-left: 30px;
+            margin-right: 30px;
+            border-radius: 20px;
+            border-color: #D2042D;
+        }
+        .sidepanel {
+            height: 0px;
+            width: 250px;
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Stay on top */
+            top: 10%;
+            left: 80%;
+            background-color: #D2042D;
+            overflow-x: hidden;
+            /* Disable horizontal scroll */
+            padding-top: 0px;
+            /* Place content 60px from the top */
+            transition: 0.5s;
+            /* 0.5 second transition effect to slide in the sidepanel */
+            transform: translate(-4px,0px);
+            border-radius: 20px;
+        }
+
+        /* The sidepanel links */
+        .sidepanel a {
+            text-decoration: none;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        /* When you mouse over the navigation links, change their color */
+        .sidepanel a:hover {
+            color: #f1f1f1;
+        }
+
+        /* Style the button that is used to open the sidepanel */
+        .openbtn {
+            font-size: 20px;
+            position: fixed;
+            cursor: pointer;
+            background-color: #000000;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            top: 4%;
+            left: 93%;
+        }
+
+        .openbtn:hover {
+            background-color: #444;
+
+            /*it appear a hand instead of the default mouse cursor */
+            cursor: pointer;
+        }
+
+        /*when clicking on button*/
+        .openbtn:active {
+            transform: scale(110%);
+        }
+
+        #scrollUp {
+            position: fixed;
+            bottom: 5px;
+            right: 10px;
+        }
+
+        #scrollUp:hover {
+            background-color: rgb(175, 175, 175);
+            cursor: pointer;
+        }
+        #scrollUp:active {
+            transform: scale(110%);
+        }
+        #tech_tower_ID{
+            border:#D2042D dashed 3px;
+            width: 1000px;
+            height: 500px;
+        }
+        button {
+            padding: 10px;
+            border-radius: 70px;
+            border-style: solid;
+            border-width: 3px;
+            background-color: rgb(107, 90, 90);
+            opacity: 0.5;
+            color: white;
+            font-family: 'Gabarito';
+            text-align: center;
+        }
+        .positionLinks {
+            transform: translate(20px, 10px);
+        }
+    </style>
+
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gabarito">
+        <style>
+            h1 {
+                text-align: center;
+            }
+            body {
+                font-family: "Gabarito"
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div>
+            <button type='button' id="scrollUp" onclick="scrolltop()">^</button>
+        </div>
+        <div id="mySidepanel" class="sidepanel">
+            <a href='about.html'>About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="pricing.html">Pricing Plans</a>
+            <a href="features.html">Features</a>
+        </div>
+
+        <button class="openbtn" onclick="openClose()">&#9776;</button>
+
+        <h1>
+            Our Best Offers
+        </h1>
+
+        <div class="buttonSegment">
+            <div class="positionlinks">
+                <nav>
+                    <a href="index.html">HOME</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <h2>
+                    Basic
+                </h2>
+                <div class="section">
+                <p>
+                    $29.99 / Month
+                <p>
+                <p>
+                    10 Full Charge Cycles
+                </p>
+                <p>
+                    Only Magnetic Charging Included
+                </p>
+            </div>
+            </div>
+            <div class="column">
+                <h2>
+                    Standard
+                </h2>
+                <div class="section">
+                <p>
+                    $59.99 / Month
+                <p>
+                <p>
+                    30 Full Charge Cycles
+                </p>
+                <p>
+                    Only Magnetic Charging Included
+                </p>
+                </div>
+            </div>
+            <div class="column">
+                <h2>
+                    Super
+                </h2>
+                <div class="section">
+                <p>
+                    $79.99 / Month
+                <p>
+                <p>
+                    50 Full Charge Cycles
+                </p>
+                <p>
+                    Magnetic Charging and 5 GB Data Plan Included
+                </p>
+                </div>
+            </div>
+        </div> 
+    </body>
+</html>

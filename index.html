@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gabarito">
+    <script src="main.js"></script>
+    <style type="text/css">
+        html {
+            scroll-behavior: smooth;
+        }
+
+        h1 {
+            color: #403d39;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        a {
+            padding: 10px;
+            border-radius: 100px;
+            border-style: solid;
+            border-width: 4px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: 'Gabarito';
+            background-color: white;
+            color: #D2042D;
+            border-color: #D2042D;
+            text-align: center;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        
+
+        a:hover {
+            background-color: #F88379;
+            color: white;
+        }
+
+        button {
+            padding: 10px;
+            border-radius: 70px;
+            border-style: solid;
+            border-width: 3px;
+            background-color: rgb(86, 80, 80);
+            opacity: 0.5;
+            color: white;
+            font-family: 'Gabarito';
+            text-align: center;
+        }
+
+        body {
+            font-family: "Gabarito";
+            position: relative;
+        }
+
+        .positionlinks {
+            transform: translate(10px, 0px);
+            @media (max-width : 700px  ) {
+                transform: translate(10px, 20px);
+            }
+        }
+
+        .buttonSegments {
+            background: #D2042D;
+            width: 100%;
+            height: 60px;
+            border-radius: 20px;
+        }
+
+        #searchBar {
+            margin-left: 10rem;
+        }
+
+        .sidepanel {
+            height: 0px;
+            width: 250px;
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Stay on top */
+            top: 10%;
+            left: 80%;
+            background-color: #D2042D;
+            overflow-x: hidden;
+            /* Disable horizontal scroll */
+            padding-top: 0px;
+            /* Place content 60px from the top */
+            transition: 0.5s;
+            /* 0.5 second transition effect to slide in the sidepanel */
+            transform: translate(-4px,0px);
+            border-radius: 20px;
+        }
+
+        /* The sidepanel links */
+        .sidepanel a {
+            text-decoration: none;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        /* When you mouse over the navigation links, change their color */
+        .sidepanel a:hover {
+            color: #f1f1f1;
+        }
+
+        /* Style the button that is used to open the sidepanel */
+        .openbtn {
+            font-size: 20px;
+            position: fixed;
+            cursor: pointer;
+            background-color: #000000;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            top: 2%;
+            left: 95%;
+        }
+
+        .openbtn:hover {
+            background-color: #444;
+
+            /*it appear a hand instead of the default mouse cursor */
+            cursor: pointer;
+        }
+        
+
+        /*when clicking on button*/
+        .openbtn:active {
+            transform: scale(110%);
+        }
+
+        #scrollUp {
+            position: fixed;
+            bottom: 5px;
+            right: 10px;
+        }
+
+        #scrollUp:hover {
+            background-color: rgb(175, 175, 175);
+            cursor: pointer;
+        }
+        #scrollUp:active {
+            transform: scale(110%);
+        }
+        #tech_tower_ID {
+    width: 75%; 
+    height: auto;
+    display: block; 
+    margin: 0 auto; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
+}
+
+.divImgTechTower {
+    padding: 20px; 
+    text-align: center; 
+}
+
+
+        .divImgTechTower{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h2{
+            text-align: center;
+        }
+
+        p{
+            text-align: center;
+        }
+        footer{
+            text-align: center;
+            color: #f1f1f1;
+            background-color: #D2042D;
+            padding: 2rem
+            
+            
+        }
+        .logoCompanyRazz{
+            max-width: 100%;
+             
+            margin-top: 0px; 
+            transform: translate(400px, -30px);
+            @media (min-width : 700px  ) {
+                transform: translate(-300px, 12px);
+            }
+        }
+        
+    </style>
+</head>
+
+
+<body>
+    <main>
+        <header> 
+        <div class="buttonSegments">
+            <div class="positionlinks">
+                <nav>
+                    <a href="contact.html">CONTACT US</a>
+                    <a href="pricing.html">OUR PLANS</a>
+                    <a href="about.html">ABOUT US</a>
+                    <a href="signin.html">SIGN IN</a>
+                    <a href="Ourteam.html">Our Team</a>
+                    <input type="search" placeholder="Search ..." id="searchBar">
+                    <img class="logoCompanyRazz" width="60" height="40"src="LogoRazz.png">
+                </nav>
+            </div>
+        </div>
+        </header>  
+        <div>
+            <h1> RAZZ - MAGNETIC CHARGING </h1>
+            <p>
+                The company builds large towers that can electromagnetically charge your phone. These towers act like
+                cell towers and will electromagnetically charge phones wireless that are subscribed to the company’s
+                charging plans. The service offered can also be bundled with data plans that can rival companies like
+                BELL and Rogers.
+            </p>
+            <p>
+                Our goal is for everyone to always have a secure
+                access to their cellphones without any batterie limitation.
+                With our towers, we want to assure that our clients no longer need to worry about their battery
+                percentage.
+            </p>
+            <div class="divImgTechTower">
+             <img id="tech_tower_ID" src="tour_Technologique_razz_v1.jpg">
+            </div>
+            <h2>The Future of Charging</h2>
+            <p>Welcome to a world where charging your devices is not just a necessity but an experience. RAZZ is at the
+                forefront of innovation, and our groundbreaking magnetic charging technology is here to redefine how we
+                power our devices. Say goodbye to traditional cords and outlets, and embrace a new era of limitless,
+                wireless charging.</p>
+
+            <h2>The RAZZ Revolution</h2>
+            <p>RAZZ's technology is more than just charging; it's a revolution. Our magnetic charging towers, inspired
+                by the design of traditional cell towers, emit powerful electromagnetic fields that empower your
+                devices. By subscribing to our charging plans, your devices can seamlessly connect to these towers,
+                receiving a continuous flow of energy.</p>
+
+            <p>Imagine never worrying about your battery percentage again, whether you're at home, at work, or on the
+                go. With RAZZ, you're not just charging your device; you're embracing the future of connectivity.</p>
+
+            <h2>Your Uninterrupted Lifestyle</h2>
+            <p>RAZZ is not just a technology company; it's a lifestyle enabler. Our magnetic charging technology isn't
+                limited to smartphones; it's designed to power your entire digital life. From tablets to smartwatches,
+                you can enjoy uninterrupted connectivity and power for all your devices.</p>
+
+            <h2>Eco-Friendly Innovation</h2>
+            <p>At RAZZ, we understand the importance of sustainability. Our magnetic charging technology is not just
+                about convenience; it's also about reducing electronic waste. By eliminating the need for disposable
+                charging cables, we're contributing to a cleaner, greener future.</p>
+
+            <p>Join us in making a positive impact on the environment while enjoying a truly futuristic way of charging.
+            </p>
+
+            <h2>Your Personal Power Network</h2>
+            <p>RAZZ's magnetic charging towers create your personal power network. They're not just charging stations;
+                they're symbols of empowerment. We believe that power should always be within your reach, and our towers
+                make that vision a reality.</p>
+
+            <h2>Join the RAZZ Community</h2>
+            <p>RAZZ is more than just a company; it's a community of forward-thinkers and tech enthusiasts. Join us in
+                the journey to redefine how we power our devices and stay connected. Follow us on social media, attend
+                our events, and be a part of the RAZZ revolution.</p>
+        </div>
+        <div>
+            <button type='button' id="scrollUp" onclick="scrolltop()">^</button>
+        </div>
+        <div id="mySidepanel" class="sidepanel">
+            <a href='about.html'>About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="pricing.html">Pricing Plans</a>
+            <a href="features.html">Features</a>
+            <a href="Ourteam.html">Our Team</a>
+            <a href ="signin.html">Sign in</a>
+        </div>
+
+        <button class="openbtn" onclick="openClose()">&#9776;</button>
+    </main>
+    <footer>
+        &copy; University of Ottawa | Rayane Badaoui & Rayhan Karim & Abbaba Toure & Loic & Victor Situ
+    </footer>
+</body>
+
+</html>

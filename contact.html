@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gabarito">
+    <style>
+        body {
+            font-family: 'Gabarito', sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #403d39;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        form {
+            max-width: 300px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 2px solid #D2042D;
+            border-radius: 100px;
+            font-family: 'Gabarito';
+        }
+
+        input[type="submit"] {
+            background-color: #D2042D;
+            color: white;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #F88379;
+            border-color: #F88379;
+        }
+
+        a {
+            padding: 10px;
+            border-radius: 100px;
+            border: 4px solid #D2042D;
+            background-color: white;
+            color: #D2042D;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: 'Gabarito';
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        a:hover {
+            background-color: #F88379;
+            color: white;
+        }
+
+        .navigation {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navigation">
+        <a href="index.html">Home</a>
+    </div>
+    <h1>Contact Us</h1>
+    <div>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="tel" id="phone" placeholder="Phone number" required>
+            <input value="Submit" type="submit">
+        </form>
+    </div>
+    
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var phone = document.getElementById('phone').value;
+            
+            // Placeholder for form submission logic, e.g., AJAX call.
+            
+            alert("Thank you for contacting us, " + name + "!");
+        });
+    </script>
+</body>
+
+</html>
+
